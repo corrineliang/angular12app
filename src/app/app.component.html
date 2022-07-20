@@ -1,7 +1,7 @@
 <div>
   <cdk-virtual-scroll-viewport itemSize="20" class="example-viewport">
-      <div *cdkVirtualFor="let state of states; let even = even;" class="example-item">
-        <app-fact-scroller [state]="state" [evenRow]="even"></app-fact-scroller>
+      <div *cdkVirtualFor="let item of items; let even = even;let index = index;" class="example-item">
+        <app-fact-scroller [item]="item" [evenRow]="even" [rowIndex]="index"></app-fact-scroller>
       </div>
   </cdk-virtual-scroll-viewport>
 <div>

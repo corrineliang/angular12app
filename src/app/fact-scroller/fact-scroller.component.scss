@@ -1,19 +1,66 @@
-.even-row {
-    background-color: lightgray;
-    border-width:  2px solid black;
-}
+.schedule-container {
+    .even-row {
+        background-color: lightgray;
+        border-width:  2px solid black;
+    }
 
-.odd-row {
-    background-color: white;
-    border-width:  2px solid black;
-}
+    .odd-row {
+        background-color: white;
+        border-width:  2px solid black;
+    }
 
-.state {
-    margin-left: 10px;
-    border-width:  1px solid #d0d5d9;
-}
+    .day-header-wrapper {
+        height: 25px;
+        .name-header {
+            display: inline-block;
+            width: 240px;
+        }
 
-.capital {
-    background-color: pink;
-    border-width:  1px solid #d0d5d9;
+        .day-header {
+            display: inline-block;
+            .day {
+                display: inline-block;
+                width: 333px;
+            }
+        }
+    }
+
+    .netstaffing-header-wrapper {
+        height: 25px;
+        .name-header {
+            display: inline-block;
+            width: 240px;
+        }
+
+        .staffing-header {
+            display: inline-block;
+            background-color: lightblue;
+            width: 1000px
+        }
+    }
+
+
+    .schedule-content-wrapper {
+        display: inline-block;
+        height: 50px;
+
+        .name, .name {
+            margin-left: 10px;
+            border-width:  1px solid #d0d5d9;
+            display: inline-block;
+            width: 200px;
+
+            .hour {
+                margin-left: 30px;
+                width: 40px;
+            }
+        }
+
+        .scheduleGrid {
+            //margin-left: 50px;
+            background-color: pink;
+            border-width:  1px solid #d0d5d9;
+            display: inline-block;
+        }
+    }
 }

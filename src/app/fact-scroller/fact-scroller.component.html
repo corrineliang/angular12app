@@ -1,3 +1,20 @@
-<div [ngClass]="{'even-row': evenRow,'odd-row': !evenRow}">
-    <span class="state">{{state.name}}!</span>
+<div class="schedule-container">
+    <div class="day-header-wrapper" *ngIf="rowIndex=== 0">
+        <div class="name-header"></div>
+        <div class="day-header">
+            <div class="day">July 19</div>
+            <div class="day">July 20</div>
+            <div class="day">July 21</div>
+        </div>
+    </div>
+    <div class="netstaffing-header-wrapper" *ngIf="rowIndex === 0">
+        <div class="name-header"></div>
+        <div class="staffing-header">Net staffing here</div>
+    </div>
+    <div class="schedule-content-wrapper" [ngClass]="{'even-row': evenRow,'odd-row': !evenRow}">
+        <div class="name">{{item.name}}<span class="hour">8:00h</span></div>
+        <div class="scheduleGrid">
+            <span class="shift">{{item.description}}</span>
+        </div>
+    </div>
 </div>

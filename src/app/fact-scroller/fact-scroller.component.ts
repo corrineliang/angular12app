@@ -6,8 +6,9 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./fact-scroller.component.scss']
 })
 export class FactScrollerComponent implements OnInit {
-  @Input() state: any;
+  @Input() item: any;
   @Input() evenRow: boolean;
+  @Input() rowIndex: number;
 
   constructor() { }
 
